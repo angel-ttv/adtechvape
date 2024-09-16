@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto - Admin</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administración</h1>
+        <nav>
+            <ul>
+                <li><a href="admin.html">Inicio</a></li>
+                <li><a href="view-sales.html">Ver Ventas</a></li>
+                <li><a href="logout.php">Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Agregar Nuevo Producto</h2>
+        <form action="add-product.php" method="post">
+            <label for="productName">Nombre del Producto:</label>
+            <input type="text" id="productName" name="productName" required>
+
+            <label for="productPrice">Precio:</label>
+            <input type="number" id="productPrice" name="productPrice" step="0.01" required>
+
+            <label for="productDescription">Descripción:</label>
+            <textarea id="productDescription" name="productDescription" required></textarea>
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vape Shop</p>
+    </footer>
+</body>
+</html>
